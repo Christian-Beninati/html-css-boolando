@@ -20,7 +20,7 @@
 /* generics */
 body{
     font-family: sans-serif;
-    padding-top: 80px;
+    padding-top: 150px;
 }
 
 header {
@@ -75,6 +75,30 @@ footer {
     padding: 5px 10px;
     font-size: 15px;
 }
+.brand {
+    padding-top: 5px;
+}
+
+.full-price {
+    color: var(--price-lables);
+}
+
+.discount-price {
+    text-decoration: line-through;
+}
+
+.product-description {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.brand, .discount-price {
+    font-weight: 100;
+}
+
+.price * {
+    display: inline-block;
+}
 
 /* header */
 
@@ -100,15 +124,9 @@ footer {
     text-align: right;
 }
 
-/* main */
-
-
 /* column */
 .column {
     flex-basis: calc(100% / 3 - 20px);
-    margin: 40px 0;
-
-    min-height: 320px;
 }
 
 /* row */
