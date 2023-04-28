@@ -100,6 +100,10 @@ footer {
     display: inline-block;
 }
 
+.favourite:hover {
+    color: red;
+}
+
 /* header */
 
 .header-bar {
