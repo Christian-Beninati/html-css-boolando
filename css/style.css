@@ -7,25 +7,91 @@
 
 /* custom properties */
 :root {
-
+    --bgd-header: #F96800;
+    --bgd-footer: #1A1A1A;
+    --discout-lables: #F82600;
+    --sustainability-lables: #1B8000;
+    --price-lables: #F82600;
+    --font-white: #FFFFFF;
+    --font-small: px;
+    --font-big: px;
 }
 
 /* generics */
 body{
+    font-family: sans-serif;
+    padding-top: 80px;
+}
+
+header {
+    background-color: var(--bgd-header);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+main {
     
 }
 
+footer {
+    background-color: var(--bgd-footer);
+}
+
 /* utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.d-flex {
+    display: flex;
+}
 
+.debug .border {
+    border: 2px dashed #525254;
+}
 
 /* header */
 
+.header-bar {
+    height: 80px;
+    align-items: center;
+}
+
+.navbar-menu, .navbar-action {
+    flex-grow: 1;
+}
+
+.navbar-logo {
+    flex-grow: 2;
+    text-align: center;
+}
+
+.header-bar * {
+    flex-basis: 10%;
+}
+
+.navbar-action {
+    text-align: right;
+}
+
+/* main */
 
 
 /* column */
 .column {
-    
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 40px 0;
+
+    min-height: 320px;
+}
+
+/* row */
+.row {
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 /* cards */
@@ -35,4 +101,20 @@ body{
 
 img {
 
+}
+
+/* footer */
+
+.footer-bar {
+    height: 120px;
+    align-items: center;
+    color: var(--font-white);
+}
+
+.footer-bar *{
+    flex-basis: 50%;
+}
+
+.navbar-social {
+    text-align: right;
 }
