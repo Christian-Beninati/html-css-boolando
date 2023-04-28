@@ -13,8 +13,7 @@
     --sustainability-lables: #1B8000;
     --price-lables: #F82600;
     --font-white: #FFFFFF;
-    --font-small: px;
-    --font-big: px;
+    --font-big: 20px;
 }
 
 /* generics */
@@ -29,6 +28,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 footer {
@@ -97,8 +97,8 @@ footer {
     text-decoration: line-through;
 }
 
-.product-description {
-    font-size: 20px;
+.product-description, .company {
+    font-size: var(--font-big);
     font-weight: 300;
 }
 
@@ -136,6 +136,10 @@ footer {
 
 .esprit img:hover {
     content: url(../img/6b.webp);
+}
+
+.brand, i {
+    cursor: pointer;
 }
 
 /* header */
@@ -177,7 +181,6 @@ footer {
 /* cards */
 
 img {
-    display: block;
     max-width: 100%;
 }
 
@@ -185,6 +188,21 @@ img {
     position: absolute;
     top: 90%;
     left: 0%;
+}
+
+header  img {
+    width: 200px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+}
+
+header i, footer i, a {
+    padding: 0 5px;
+    color: var(--font-white);
 }
 
 /* footer */
@@ -203,3 +221,12 @@ img {
 .navbar-social {
     text-align: right;
 }
+
+.company, .social-icons {
+    padding: 10px 5px;
+} 
+
+.social, social {
+    margin-right: 10px;
+}
+
