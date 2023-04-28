@@ -55,11 +55,16 @@ footer {
 
 .discount {
     background-color: var(--discout-lables);
-    
+    position: absolute;
+    top: 90%;
+    left: 0;
 }
 
 .sustainab {
     background-color: var(--sustainability-lables);
+    position: absolute;
+    top: 90%;
+    left: 15%;
 }
 
 .discount, .sustainab {
@@ -68,9 +73,6 @@ footer {
 
 .lable {
     padding: 5px 10px;
-    position: absolute;
-    top: 90%;
-    left: 0;
     font-size: 15px;
 }
 
